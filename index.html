@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="border-score">
+                <div class="logo">
+                    <img src="img/logo.svg">
+                </div>
+                <div class="score">
+                    <p>S C O R E</p>
+                    <p class="score-wrapper"></p>
+                </div>
+            </div>
+        </div>
+        <div class="choice-circle" id="choice">
+            <div class="top-choice">
+                <button class="paper" id="paper-id"><img src="img/icon-paper.svg" alt="Paper"></button>
+                <button class="scissors" id="scissors-id"><img src="img/icon-scissors.svg" alt="Scissors"></button>
+            </div>
+            <div class="bottom-choice">
+                <button class="rock" id="rock-id"><img src="img/icon-rock.svg" alt="Rock"></button>
+            </div>
+        </div>
+        <div id="picked-id">
+            <div class="picked">
+                <div class="header-picked">
+                    <p>YOU PICKED</p>
+                    <p>THE HOUSE PICKED</p>
+                </div>
+                <div class="img-picked">
+                    <button id="img-picked-bt"></button>
+                    <div class="play-again">
+                        <p class="result-text"></p>
+                        <button class="play-button">PLAY AGAIN</button>
+                    </div>
+                    <button id="img-house-bt"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rules" id="rule">
+            <div class="modal-rules">
+                <div class="header-modal-rules">
+                    <h2>RULES</h2>
+                </div>
+                <div class="close" id="close-modal">
+                    <button><img src="img/icon-close.svg"></button>
+                </div>
+            </div>
+            <div class="img-rules">
+                <img src="img/image-rules.svg">
+            </div>
+        </div>
+        <div class="footer">
+            <button id="show-rules">RULES</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
